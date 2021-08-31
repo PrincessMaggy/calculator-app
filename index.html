@@ -4,23 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  
+  <link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" />
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
   
   <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <header>
+      <div>
+        <h3> calc</h3>
+
+      <div class="switch-toggle switch-3 switch-candy">
+        <input id="Theme1" name="state-d" type="radio" checked="" />
+        <label for="Theme1" onclick="">1</label>
+      
+        <input id="Theme2" name="state-d" type="radio" checked="" />
+        <label for="Theme2" onclick="">2</label>
+      
+        <input id="Theme3" name="state-d" type="radio" />
+        <label for="Theme3" onclick="">3</label>
+      
+        <a></a>
+      </div>
+    </div>
+</header>
 
 
-  
+
+<section>
+  <div>
+    <input type="number">
+  </div>
+
+  <div id="center-btn">
+    <div>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>DEL</button> </div>
+
+      <div>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>+</button> </div>
+
+      <div>
+      <button>3</button>
+      <button>2</button>
+      <button>1</button>
+      <button>-</button> </div>
+
+      <div>
+      <button>.</button>
+      <button>0</button>
+      <button>/</button>
+      <button>&times</button> </div>
+
+
+      <div>
+      <button>RESET</button>
+      <button>=</button>
+      </div>
+
+    </div>
+</section>
+
+
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Maggy.</a>.
   </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
