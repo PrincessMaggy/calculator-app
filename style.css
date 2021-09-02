@@ -155,8 +155,8 @@ button{
         width:65vw;
     }
     button{
-        /* width: 0.5em; */
-        padding: 0.5em 1.0em 0.5em 1.0em;
+
+        padding: 0.5em 0.5em;
     }
     #div5 button{
         width: 42%;
