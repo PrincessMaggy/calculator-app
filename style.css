@@ -114,18 +114,23 @@ button{
    font-weight: 700;
    border:0.5px groove var(--keyShadow3);
 }
-#last {
+#odd {
     background-color:var(--keyBackground1);
     box-shadow: 1px 0.5px var(--keyShadow1);
     color: var(--border);
     border:0.5px groove var(--keyShadow1);
+}
+#div1 button:last-child{
+    font-size:0.65rem;
+}
+#div5 button{
+    width: 41%;
 }
 #red{
     background-color: var(--keyBackground2);
     color: var(--border);
     box-shadow: 1px 0.5px var(--keyShadow2);
     border:0.5px groove var(--keyShadow2);
-    width: 41%;
 }
 
  
@@ -141,3 +146,25 @@ button{
       color: wheat; 
       text-decoration: none;
     }
+
+
+
+    
+@media (max-width: 768px){
+    input,#center-btn{
+        width:65vw;
+    }
+    #div5 button{
+        width: 42%;
+    }
+}
+
+   
+@media only screen and (max-width: 1000px) and (min-width:769px) {
+    input, #center-btn{
+       width: 42vw;
+    }
+    #div5 button{
+        width: 35%;
+    }
+}
