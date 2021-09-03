@@ -22,38 +22,38 @@
 
 
   <div>
-    <input type="text">
+    <input type="text" class="calculator__display">
   </div>
 
-  <div id="center-btn">
+  <div id="center-btn"  class="calculator__keys">
     <div id="div1">
       <button>7</button>
       <button>8</button>
       <button>9</button>
-      <button id="odd">DEL</button> </div>
+      <button id="odd" data-action="clear">DEL</button> </div>
 
       <div id="div2"> 
       <button>4</button>
       <button>5</button>
       <button>6</button>
-      <button>+</button> </div>
+      <button class="key--operator" data-action="add">+</button> </div>
 
       <div id="div3">
       <button>3</button>
       <button>2</button>
       <button>1</button>
-      <button>-</button> </div>
+      <button class="key--operator" data-action="subtract">-</button> </div>
 
       <div id="div4">
-      <button>.</button>
+      <button data-action="decimal">.</button>
       <button>0</button>
-      <button>/</button>
-      <button>&times</button> </div> 
+      <button  class="key--operator" data-action="divide">/</button>
+      <button class="key--operator" data-action="multiply">&times</button> </div> 
 
 
       <div id="div5" >
       <button id="odd">RESET</button>
-      <button id="red"> =</button>
+      <button id="red" class="key--equal" data-action="calculate"> =</button>
       </div>
 
     </div>
