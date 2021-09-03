@@ -64,5 +64,11 @@ keys.addEventListener('click', e => {
     const keyContent = key.textContent
     const displayedNum = display.textContent
     // ...
+  
+  if (!action) {
+    if (displayedNum === '0') {
+      display.textContent = keyContent
+    }
   }
+}
 })
