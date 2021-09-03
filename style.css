@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap');
 
 
-:root {
+.theme1{
  --globalFont: 'Spartan', sans-serif;
 --mainBackground: hsl(222, 26%, 31%);
 --keypadBackground: hsl(223, 31%, 20%);
@@ -21,15 +21,15 @@
 /* THEME 2 */
 .theme2{
 --mainBackground: hsl(0, 0%, 90%);
---keypadBackground: hsl(0, 5%, 81%);;
+--keypadBackground: hsl(0, 5%, 76%);;
 --screenBackground: hsl(0, 0%, 93%);
 --keyBackground1: hsl(185, 42%, 37%);
 --keyShadow1: hsl(185, 58%, 25%);
 --keyBackground2: hsl(25, 98%, 40%);
 --keyShadow2: hsl(25, 99%, 27%);
 --keyBackground3: hsl(45, 7%, 89%);
---keyShadow3: hsl(35, 11%, 61%);
---text1: hsl(60, 10%, 19%);
+--keyShadow3: white;
+--text1: black;
 --text2: hsl(60, 10%, 19%);
 --white: hsl(0, 0, 100%);
 --border: white;
@@ -38,7 +38,6 @@
     
 /* THEME 3 */
 .theme3{
-   
 --mainBackground: hsl(268, 75%, 9%);
 --keypadBackground:hsl(268, 71%, 12%);
 --screenBackground: hsl(268, 71%, 12%);
@@ -48,9 +47,12 @@
 --keyShadow2: hsl(177, 92%, 70%);
 --keyBackground3: hsl(268, 47%, 21%);
 --keyShadow3: hsl(290, 70%, 36%);
---text1: hsl(52, 100%, 62%);
+--text1: gold;
 --text2: hsl(198, 20%, 13%);
 --white: hsl(0, 0, 100%);
+--border: white;
+
+
 }    
 
 *{
@@ -66,9 +68,11 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--mainBackground);
-    color: white;
+    /* color: var(--text1); */
     transition: 0.5s ease;
 }
+
+
 
 
 section{
@@ -86,13 +90,14 @@ input{
     width: 28vw;
     background-color: var(--screenBackground);
     margin-bottom:1.5em ;
+    border:1px groove var(--border);
 }
 input:focus{
     cursor:text;
 }
 #center-btn{
     width: 28vw;
-    border: 1px groove black;
+    border: 1px groove var(--border);
     padding: 0.5em;
     font-size: 32px;
     flex-direction: column;
@@ -108,7 +113,7 @@ button{
     padding: 0.7em 1.5em 0.7em 1.5em;
     margin: 0.7em;
     box-shadow: 2px 1px var(--border);
-    background-color:hsl(0, 0, 100%);
+    background-color:white;
     border-radius: 5px;
    color: var(--text1);
    font-weight: 700;
@@ -141,10 +146,11 @@ button{
   .attribution {
        font-size: 11px;
        margin: 1em; 
+       color: var(--text1);
     }
   .attribution a { 
-      color: wheat; 
       text-decoration: none;
+      color: var(--text1);
     }
 
 
@@ -153,7 +159,7 @@ button{
 @media (max-width: 768px){
     
 section{
-    margin: 2em 0 0 0;
+    margin: 2em 0 0 0.5em;
    
 }
     input,#center-btn{
