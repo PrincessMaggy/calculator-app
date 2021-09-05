@@ -45,7 +45,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Vanilla Javascript
 
 
@@ -75,7 +74,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 
 ### Useful resources
-
+- Website - Freshman blog (https://freshman.tech/calculator/)
+- Website - Freecodecamp project (https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/)
 
 ## Author
 
@@ -85,3 +85,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 
 ## Acknowledgments
+My sincere thanks goes to my coach [@Ahuoyiza](https://github.com/Ahuoyiza) for her lectures and motivations and also to free code camp for organizing a free training for learning javascript.

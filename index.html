@@ -22,38 +22,42 @@
 
 
   <div>
-    <input type="text" class="calculator__display">
+    <input type="text" class="calculator__display" value="" disabled>
   </div>
 
   <div id="center-btn"  class="calculator__keys">
     <div id="div1">
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button id="odd" data-action="clear">DEL</button> </div>
+      <button value="7">7</button>
+      <button value="8">8</button>
+      <button value="9">9</button>
+      <button id="odd" class="del">DEL</button> 
+    </div>
 
       <div id="div2"> 
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button class="key--operator" data-action="add">+</button> </div>
+      <button value="4">4</button>
+      <button value="5">5</button>
+      <button value="6">6</button>
+      <button value="+" class="key--operator">+</button> 
+    </div>
 
       <div id="div3">
-      <button>3</button>
-      <button>2</button>
-      <button>1</button>
-      <button class="key--operator" data-action="subtract">-</button> </div>
+      <button value="3">3</button>
+      <button value="2">2</button>
+      <button value="1">1</button>
+      <button value="-" class="key--operator" >-</button> 
+    </div>
 
       <div id="div4">
-      <button data-action="decimal">.</button>
-      <button>0</button>
-      <button  class="key--operator" data-action="divide">/</button>
-      <button class="key--operator" data-action="multiply">&times</button> </div> 
+      <button value="." class="decimal">.</button>
+      <button value="0">0</button>
+      <button value="/" class="key--operator">/</button>
+      <button value="*" class="key--operator">&times</button> 
+    </div> 
 
 
       <div id="div5" >
-      <button id="odd">RESET</button>
-      <button id="red" class="key--equal" data-action="calculate"> =</button>
+      <button value="all-clear" class="all--clear" id="odd" >RESET</button>
+      <button value="=" class="key--operator" id="red" > =</button>
       </div>
 
     </div>
