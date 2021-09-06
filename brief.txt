@@ -1,6 +1,6 @@
-Project name: Calculator App
-Author: Edozie Magdalene Princess
-Timeline: 10 days
+Project name: Calculator App.
+Author: Edozie Magdalene Princess.
+Timeline: 10 days.
 Project Description:
 Users should be able to:
 
@@ -17,4 +17,5 @@ Tasks
 1. Create a git repository and push. 
 2. Create the UI using html and css.
 3. Add a feature for theme switch.
-4. Create the logic for the functionality of the calculator using vanilla javascript.
+4. Save the theme to local Storage.
+5. Create the logic for the functionality of the calculator using vanilla javascript.

@@ -1,6 +1,6 @@
 // THEME SWITCHER
 (function( d ) {
-    // 'use strict';
+    'use strict';
     d.getElementById( 'myRange' ).addEventListener( 'change',
        function() {
           switch( this.value ){
@@ -28,6 +28,8 @@
 
 //  CALCULATOR
 
+
+// THis class stores the data from the buttons
 const calculator = {
   displayValue: '0',
   firstOperand: null,
@@ -36,7 +38,7 @@ const calculator = {
 };
 
 
-
+// This function displays the values from buttons
 function updateDisplay() {
   const display = document.querySelector('.calculator__display');
   display.value = calculator.displayValue;
@@ -45,7 +47,7 @@ updateDisplay();
 
 
 
-
+//This function assigns values from the button to the calculator class
 function inputDigit(digit) {
   const { displayValue, waitingForSecondOperand } = calculator;
 
@@ -56,11 +58,10 @@ function inputDigit(digit) {
    else {
     calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
   }
-
-  console.log(calculator);
 }
 
 
+// This function handles the decimal operator
 function inputDecimal(dot) {
   if (calculator.waitingForSecondOperand === true) {
   	calculator.displayValue = '0.'
@@ -101,7 +102,7 @@ function handleOperator(nextOperator) {
 
 
 
-
+// This function  calculates whatever data is inputted
 function calculate(firstOperand, secondOperand, operator) {
   if (operator === '+') {
     return firstOperand + secondOperand;
@@ -117,7 +118,7 @@ function calculate(firstOperand, secondOperand, operator) {
 
 
 
-
+// This function resets the calculator when the reset button is pressed.
 function resetCalculator() {
   calculator.displayValue = '0';
   calculator.firstOperand = null;
@@ -127,13 +128,13 @@ function resetCalculator() {
 }
 
 
-
+// This function deletes the current data on display 
 function clearDigit(){
   calculator.displayValue = '0';
 }
 
 
-
+// All data via the html buttons is accessed through the event.listener method
 const keys = document.querySelector('.calculator__keys');
 keys.addEventListener('click', (event) => {
   const { target } = event;
@@ -191,6 +192,9 @@ keys.addEventListener('click', (event) => {
 //       break;
 //     case '.':
 //       inputDecimal(value);
+//       break;
+//     case 'del':
+//       clearDigit();
 //       break;
 //     case 'all-clear':
 //       resetCalculator();

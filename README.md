@@ -49,23 +49,6 @@ Users should be able to:
 
 
 
-### What I learned
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-
 
 ### Continued development
 
@@ -76,6 +59,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 - Website - Freshman blog (https://freshman.tech/calculator/)
 - Website - Freecodecamp project (https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/)
+
 
 ## Author
 
