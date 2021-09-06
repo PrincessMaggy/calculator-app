@@ -212,7 +212,7 @@ button:focus{
 section{
     margin: 2em 0 0 0.5em;
 }
-    input,#center-btn{
+    input, section #center-btn{
         width:85vw;
     }
     
