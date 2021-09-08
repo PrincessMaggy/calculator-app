@@ -135,7 +135,11 @@ function resetCalculator() {
 
 // This function deletes the current data on display 
 function clearDigit(){
-  calculator.displayValue = '0';
+let value = calculator.displayValue;
+calculator.displayValue = calculator.displayValue.substr(0, value.length -1);
+if(value.length===0){
+  calculator.displayValue ='0';
+}
 }
 
 
