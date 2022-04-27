@@ -1,121 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap');
-
-
-.theme1{
- --globalFont: 'Spartan', sans-serif;
---mainBackground: hsl(222, 26%, 31%);
---keypadBackground: hsl(223, 31%, 20%);
---screenBackground: hsl(224, 36%, 15%);
---keyBackground1: hsl(225, 21%, 49%);
---keyShadow1: hsl(224, 28%, 35%);
---keyBackground2: hsl(6, 63%, 50%);
---keyShadow2: hsl(6, 70%, 34%);
---keyBackground3: hsl(30, 25%, 89%);
---keyShadow3: hsl(28, 16%, 65%);
---text1: hsl(221, 14%, 31%);
---text2: hsl(221, 14%, 31%);
---inputColor: white;
---weirdo1:white;
---weirdo2:white;
-}  
+.theme1 {
+    --globalFont: 'Spartan', sans-serif;
+    --mainBackground: hsl(222, 26%, 31%);
+    --keypadBackground: hsl(223, 31%, 20%);
+    --screenBackground: hsl(224, 36%, 15%);
+    --keyBackground1: hsl(225, 21%, 49%);
+    --keyShadow1: hsl(224, 28%, 35%);
+    --keyBackground2: hsl(6, 63%, 50%);
+    --keyShadow2: hsl(6, 70%, 34%);
+    --keyBackground3: hsl(30, 25%, 89%);
+    --keyShadow3: hsl(28, 16%, 65%);
+    --text1: hsl(221, 14%, 31%);
+    --text2: hsl(221, 14%, 31%);
+    --inputColor: white;
+    --weirdo1: white;
+    --weirdo2: white;
+}
 
 
 /* THEME 2 */
-.theme2{
---globalFont: 'Spartan', sans-serif;
---mainBackground: hsl(0, 0%, 90%);
---keypadBackground: hsl(0, 5%, 76%);;
---screenBackground: hsl(0, 0%, 93%);
---keyBackground1: hsl(185, 42%, 37%);
---keyShadow1: hsl(185, 58%, 25%);
---keyBackground2: hsl(25, 98%, 40%);
---keyShadow2: hsl(25, 99%, 27%);
---keyBackground3: hsl(45, 7%, 89%);
---keyShadow3: white;
---text1: black;
---text2: hsl(60, 10%, 19%);
---border: white;
---inputColor: black;
---weirdo1:white;
---weirdo2:white;
+
+.theme2 {
+    --globalFont: 'Spartan', sans-serif;
+    --mainBackground: hsl(0, 0%, 90%);
+    --keypadBackground: hsl(0, 5%, 76%);
+    ;
+    --screenBackground: hsl(0, 0%, 93%);
+    --keyBackground1: hsl(185, 42%, 37%);
+    --keyShadow1: hsl(185, 58%, 25%);
+    --keyBackground2: hsl(25, 98%, 40%);
+    --keyShadow2: hsl(25, 99%, 27%);
+    --keyBackground3: hsl(45, 7%, 89%);
+    --keyShadow3: white;
+    --text1: black;
+    --text2: hsl(60, 10%, 19%);
+    --border: white;
+    --inputColor: black;
+    --weirdo1: white;
+    --weirdo2: white;
 }
 
-    
+
 /* THEME 3 */
-.theme3{
---globalFont: 'Spartan', sans-serif;
---mainBackground: hsl(268, 75%, 9%);
---keypadBackground:hsl(268, 71%, 12%);
---screenBackground: hsl(268, 71%, 12%);
---keyBackground1: hsl(281, 89%, 26%);
---keyShadow1: hsl(285, 91%, 52%);
---keyBackground2: hsl(176, 100%, 44%);
---keyShadow2: hsl(177, 92%, 70%);
---keyBackground3: hsl(268, 47%, 21%);
---keyShadow3: hsl(290, 70%, 36%);
---text1:  hsl(52, 100%, 62%);
---text2: hsl(198, 20%, 13%);
---border: hsl(281, 89%, 26%);
---inputColor: hsl(52, 100%, 62%);
---weirdo1:white;
---weirdo2:hsl(268, 75%, 9%);
 
-}    
-
-
-
-
-*{
-    box-sizing: border-box;
-    margin:0;
-    cursor: pointer;
-    font-family:var(--globalFont);
-
+.theme3 {
+    --globalFont: 'Spartan', sans-serif;
+    --mainBackground: hsl(268, 75%, 9%);
+    --keypadBackground: hsl(268, 71%, 12%);
+    --screenBackground: hsl(268, 71%, 12%);
+    --keyBackground1: hsl(281, 89%, 26%);
+    --keyShadow1: hsl(285, 91%, 52%);
+    --keyBackground2: hsl(176, 100%, 44%);
+    --keyShadow2: hsl(177, 92%, 70%);
+    --keyBackground3: hsl(268, 47%, 21%);
+    --keyShadow3: hsl(290, 70%, 36%);
+    --text1: hsl(52, 100%, 62%);
+    --text2: hsl(198, 20%, 13%);
+    --border: hsl(281, 89%, 26%);
+    --inputColor: hsl(52, 100%, 62%);
+    --weirdo1: white;
+    --weirdo2: hsl(268, 75%, 9%);
 }
-body{
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    cursor: pointer;
+    font-family: var(--globalFont);
+}
+
+body {
     margin: 0;
     padding: 0;
     background-color: var(--mainBackground);
     transition: 0.5s ease;
 }
 
-
-
-
-section{
+section {
     width: 48vw;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top:2em ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
 }
 
-h1{
-    text-transform:uppercase;
+h1 {
+    text-transform: uppercase;
     color: var(--inputColor);
 }
 
-
-
-input{
+input {
     padding: 1em;
     border-radius: 8px;
     width: 28vw;
     background-color: var(--screenBackground);
-    margin-bottom:1.5em ;
-    border:1px groove var(--border);
+    margin-bottom: 1.5em;
+    border: 1px groove var(--border);
     font-weight: bolder;
     color: var(--inputColor);
     outline: 0;
     font-size: 1.5rem;
 }
-input:focus{
-    cursor:text;
+
+input:focus {
+    cursor: text;
 }
 
-
-
-
-section #center-btn{
+section #center-btn {
     width: 28vw;
     border: 1px groove var(--border);
     padding: 0.5em;
@@ -124,109 +114,102 @@ section #center-btn{
     background-color: var(--keypadBackground);
     border-radius: 8px;
 }
-section #center-btn div{
+
+section #center-btn div {
     display: flex;
     margin: 0.1em;
 }
 
-
-
-
-
-button{
+button {
     padding: 0.7em 1.5em 0.7em 1.5em;
     margin: 0.7em;
     box-shadow: 2px 1px var(--border);
-    background-color:var(--keyBackground3);
+    background-color: var(--keyBackground3);
     border-radius: 5px;
-   color: var(--text1);
-   font-weight: 700;
-   border:0.5px groove var(--keyShadow3);
+    color: var(--text1);
+    font-weight: 700;
+    border: 0.5px groove var(--keyShadow3);
 }
-button:hover{
-    color:var(--keyBackground3) ;
-    background-color:var(--text1);
+
+button:hover {
+    color: var(--keyBackground3);
+    background-color: var(--text1);
 }
-button:focus{
+
+button:focus {
     border: none;
 }
 
-
-#odd {
-    background-color:var(--keyBackground1);
+#clear {
+    background-color: var(--keyBackground1);
     box-shadow: 1px 0.5px var(--keyShadow1);
-    border:0.5px groove var(--keyBackground1);
+    border: 0.5px groove var(--keyBackground1);
     color: var(--weirdo1);
 }
-#odd:hover{
+
+#clear:hover {
     color: var(--keyBackground1);
-    background-color:var(--weirdo1) ;
+    background-color: var(--weirdo1);
 }
-#odd:focus{
+
+#clear:focus {
     border: none;
 }
 
-
-#div1 button:last-child{
-    font-size:0.65rem;
+#div1 button:last-child {
+    font-size: 0.65rem;
 }
-#div5 button{
+
+#div5 button {
     width: 41%;
 }
 
-
-#red{
+#red {
     background-color: var(--keyBackground2);
     box-shadow: 1px 0.5px var(--keyShadow2);
-    border:0.5px groove var(--keyBackground2);
+    border: 0.5px groove var(--keyBackground2);
     color: var(--weirdo2);
 }
-#red:hover{
+
+#red:hover {
     color: var(--keyBackground2);
     background-color: var(--weirdo2);
 }
-#red:focus{
+
+#red:focus {
     border: none;
 }
 
- 
-
-
-
-
 .attribution {
-       font-size: 11px;
-       margin: 1em; 
-       color: var(--inputColor);
-    }
-  .attribution a { 
-      text-decoration: none;
-      color: var(--inputColor);
-    }
-
-
-
-    
-@media (max-width: 768px){
-    
-section{
-    margin: 2em 0 0 0.5em;
+    font-size: 11px;
+    margin: 1em;
+    color: var(--inputColor);
 }
-    input, section #center-btn{
-        width:85vw;
+
+.attribution a {
+    text-decoration: none;
+    color: var(--inputColor);
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: 2em 0 0 0.5em;
     }
-    
-    #div5 button{
+    input,
+    section #center-btn {
+        width: 85vw;
+    }
+    #div5 button {
         width: 42%;
     }
 }
 
-   
 @media only screen and (max-width: 1000px) and (min-width:769px) {
-    input, #center-btn{
-       width: 42vw;
+    input,
+    #center-btn {
+        width: 42vw;
     }
-    #div5 button{
+    #div5 button {
         width: 35%;
     }
 }

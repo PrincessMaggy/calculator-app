@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" type="text/css" href="style.css">
-  
-  <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Frontend Mentor | Calculator app</title>
 </head>
 
 <body class="theme1">
- 
-  <section>
 
-    <h1>Calculator</h1>
+    <section>
 
-  <input type="range" min="1" max="3" value="1" id="myRange">
+        <h1>Calculator</h1>
+
+        <input type="range" min="1" max="3" value="1" id="myRange">
 
 
-  <div>
-    <input type="text" class="calculator__display" value="" disabled>
-  </div>
+        <div>
+            <input type="text" id="display" class="calculator__display" value="" disabled>
+        </div>
 
-  <div id="center-btn"  class="calculator__keys">
-    <div id="div1">
-      <button value="7">7</button>
-      <button value="8">8</button>
-      <button value="9">9</button>
-      <button id="odd" class="del">DEL</button> 
+        <div id="center-btn" class="calculator__keys">
+            <div id="div1">
+                <button value="7" id="seven">7</button>
+                <button value="8" id="eight">8</button>
+                <button value="9" id="nine">9</button>
+                <button id="clear" class="del">DEL</button>
+            </div>
+
+            <div id="div2">
+                <button value="4" id="four">4</button>
+                <button value="5" id="five">5</button>
+                <button value="6" id="six">6</button>
+                <button value="+" id="add" class="key--operator">+</button>
+            </div>
+
+            <div id="div3">
+                <button value="3" id="three">3</button>
+                <button value="2" id="two">2</button>
+                <button value="1" id="one">1</button>
+                <button value="-" id="subtract" class="key--operator" style="padding: 0.7em 1.7em 0.7em 1.7em;"> - </button>
+            </div>
+
+            <div id="div4">
+                <button value="." id="decimal" class="decimal">.</button>
+                <button value="0" id="zero">0</button>
+                <button value="/" id="divide" class="key--operator">/</button>
+                <button value="*" id="multiply" class="key--operator" style="padding: 0.7em 1.7em 0.7em 1.7em;">&times</button>
+            </div>
+
+
+            <div id="div5">
+                <button value="all-clear" class="all--clear" id="clear">RESET</button>
+                <button value="=" id="equals" class="key--operator" id="red"> =</button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Maggy.</a>.
     </div>
 
-      <div id="div2"> 
-      <button value="4">4</button>
-      <button value="5">5</button>
-      <button value="6">6</button>
-      <button value="+" class="key--operator">+</button> 
-    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-      <div id="div3">
-      <button value="3">3</button>
-      <button value="2">2</button>
-      <button value="1">1</button>
-      <button value="-" class="key--operator" style="padding: 0.7em 1.7em 0.7em 1.7em;"> - </button> 
-    </div>
-
-      <div id="div4">
-      <button value="." class="decimal">.</button>
-      <button value="0">0</button>
-      <button value="/" class="key--operator">/</button>
-      <button value="*" class="key--operator"  style="padding: 0.7em 1.7em 0.7em 1.7em;">&times</button> 
-    </div> 
-
-
-      <div id="div5" >
-      <button value="all-clear" class="all--clear" id="odd" >RESET</button>
-      <button value="=" class="key--operator" id="red" > =</button>
-      </div>
-
-    </div>
-</section>
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Maggy.</a>.
-  </div>
-
-  <script src="index.js"></script>
-  
 
 </body>
+
 </html>
